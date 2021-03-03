@@ -23,70 +23,78 @@
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+    <header class="jumbotron justify-content-center">
+      <h1>Work Day Scheduler</h1>
+      <h2>A simple calendar app for scheduling your work day</h2>
+      <h3 id="currentDay" class="date"></h3>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <h1 id="currentTime" class="text-center"></h1>
-
-      <!-- This is for the 9 PM input -->
-      <div class="row">
-        <div class="col-sm-12">
-          <form>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> 9 PM</span>
-              </div>
-              <input id="21" type="text" class="form-control" placeholder="Enter Text">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- This is for the 10 PM input -->
-      <div class="row">
-        <div class="col-sm-12">
-          <form>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> 10 PM</span>
-              </div>
-              <input id="22" type="text" class="form-control" placeholder="Enter Text">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-  
-  
-      <!-- This is for the 11 pm input -->
-  
-      <div class="row">
-        <div class="col-sm-12">
-          <form>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> 11 PM</span>
-              </div>
-              <input id="23" type="text" class="form-control" placeholder="Enter Text">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-  
+   
+    <div class="container mb-4">
     </div>
 
-<script src="./app.js"></script>
+      <!-- This is for the 9 AM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">9 am</div>
+          <textarea id="hour1" class="col-8 description"></textarea>
+          <button id="1" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 10 AM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">10 am</div>
+          <textarea id="hour1" class="col-8 description"></textarea>
+          <button id="10" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 11 AM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">11 am</div>
+          <textarea id="hour1" class="col-8 description"></textarea>
+          <button id="11" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 12 AM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">12 am</div>
+          <textarea id="hour12" class="col-8 description"></textarea>
+          <button id="12" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 1 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">1 pm</div>
+          <textarea id="hour13" class="col-8 description"></textarea>
+          <button id="13" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 2 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">2 pm</div>
+          <textarea id="hour14" class="col-8 description"></textarea>
+          <button id="14" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 3 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">3 pm</div>
+          <textarea id="hour15" class="col-8 description"></textarea>
+          <button id="15" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 4 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">4 pm</div>
+          <textarea id="hour16" class="col-8 description"></textarea>
+          <button id="16" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 5 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">5 pm</div>
+          <textarea id="hour17" class="col-8 description"></textarea>
+          <button id="17" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      <!-- This is for the 6 PM input -->
+      <div class="row">
+        <div class="col-2 hour time-block border-dark rounded-right">6 pm</div>
+          <textarea id="hour18" class="col-8 description"></textarea>
+          <button id="18" class="col-1 fas fa-save btnClass btn-info">Button</button>
+      </div>
+      
+
+<script src="./Develop/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
